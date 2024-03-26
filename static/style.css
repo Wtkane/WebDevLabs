@@ -1,0 +1,188 @@
+*{
+    font-family:MyFont;
+    padding: 5px;
+    margin: 5px;
+    /*border: 1px solid black;*/
+}
+#webname{
+    background-color:var(--myBlu);
+    color: var(--myGray);
+
+}
+
+.classA {
+    width: 45%;
+    display: inline-block;
+ }
+
+nav a {
+   text-decoration: none;
+   margin: -5px;
+   margin-right: 15px;    margin-right: 15px;
+   font-size: x-large;
+   color: var(--myGray);
+   float: left;
+   display: block;
+ }
+
+ nav a.icon {
+   display: none;
+}
+
+ body{
+    background-color: var(--Bg);
+ }
+
+
+header {
+    background-color: var(--darkGray);
+ }
+
+:root {
+
+    --lightBLU: rgb(205, 234, 244);
+    --gray : rgb(123, 124, 139);
+    --lightGray: rgb(212, 213, 226);
+    --darkGray : rgb(65, 65, 68);
+    --myBlu:#145996;
+    --myGray:#c0afaf;
+    --Bg:#acd2ee;
+ }
+
+ @font-face {
+
+    font-family: MyFont;
+    src: url(../static/Titillium_Web/TitilliumWeb-Regular.ttf);
+ }
+
+
+form * {
+
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+ }
+
+ th {
+    padding: 12px;
+    background-color: var(--myBlu);
+    color: white;
+    width: fit-content;
+ }
+ 
+ 
+ table tr:hover {
+    background-color: var(--gray);
+ }
+
+ table tr {
+    background-color: var(--myBlu);
+ }
+ 
+  table tr:nth-child(even):hover {
+    background-color: var(--lightGray);
+ }
+ table tr:nth-child(even):hover {
+    background-color: var(--lightGray);
+ }
+ table tr:nth-child(even) {
+    background-color: var(--darkGray);
+    color: white;
+ }
+
+ input[type=button], input[type=submit], input[type=reset] {
+    background-color: var(--myBlu);
+    border: none;
+    color: white;
+    border-radius:20px;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin:auto;
+  }
+ /* #FavList {
+   display: none;
+}
+*/
+#SeeMoreBTN{
+   background-color: var(--darkGray);
+   border: 0px;
+   border-radius: 16px;
+   font-size:large;
+   color:white;
+
+}
+
+#longIntro, #readLess {
+   display: none;
+}
+
+
+#readLess, #readMore {
+   font-style: italic;
+   background-color:var(--darkGray);
+   color:white;
+
+}
+#ValidateMsg {
+   width: max-content;
+   margin: auto;
+
+}
+
+
+#map {
+   height: 40vh;  /* 40% of the viewport height */
+}
+
+.funIMG {
+   width: 70%;
+   border-radius: 100%;
+ }
+
+ .mainFun {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+
+#item1, #item2, #item3, #item4 {
+   width: 40vw; /* 40% of the viewport width */
+   margin: auto;
+}
+
+nav a:hover {
+   background-color: var(--gray);
+}
+
+nav a.active {
+   background-color: var(--gray);
+}
+
+nav {
+   overflow: hidden;
+ }
+
+ @media screen and (max-width: 650px) {
+   .topnav a:not(:first-child) {display: none;}
+   .topnav a.icon {
+     float: right;
+     display: block;
+   }}
+
+@media screen and (max-width: 650px) {
+   .topnav.responsive {position: relative;}
+   .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+      
+.topnav.responsive a {
+   float: none;
+   display: block;
+   text-align: left;
+}}
